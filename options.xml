@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
+	<import>
+		<categories>
+			<category name="general.ldap">
+				<parent>general</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="ldap">
+				<categoryname>general.ldap</categoryname>
+				<optiontype>boolean</optiontype>
+				<enableoptions><![CDATA[ldap_server,ldap_server_port,ldap_dn,ldap_check]]></enableoptions>
+			</option>
+			<option name="ldap_server">
+				<categoryname>general.ldap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[ldap://vps8.itedvo.eu/]]></defaultvalue>
+			</option>
+			<option name="ldap_server_port">
+				<categoryname>general.ldap</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[389]]></defaultvalue>
+			</option>
+			<option name="ldap_dn">
+				<categoryname>general.ldap</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[ou=Users,DC=vps8,DC=itedvo,DC=eu]]></defaultvalue>
+			</option>
+			<option name="ldap_check_wcf">
+				<categoryname>general.ldap</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

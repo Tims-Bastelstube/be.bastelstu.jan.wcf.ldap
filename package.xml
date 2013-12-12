@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="be.bastelstu.jan.wcf.ldap" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename>LDAP Login Extension</packagename>
+		<packagedescription>LDAP Login Extension</packagedescription>
+		<version>1.0.0 RC 2</version>
+		<date>2013-12-12</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>Stricted</author>
+		<authorurl>http://tims.bastelstu.be</authorurl>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0 RC 3">com.woltlab.wcf</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="eventListener">eventlistener.xml</instruction>
+		<instruction type="option">options.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 RC 1">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="eventListener">eventlistener.xml</instruction>
+		<instruction type="option">options.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+</package>
